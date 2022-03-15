@@ -1,0 +1,41 @@
+body{
+    background-color: #f7f5e5;
+}
+
+nav{
+    display: flex;
+}
+
+nav img{
+    display: flex;
+}
+
+a{
+    color: #374d42;
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    overflow-y: hidden;
+    margin: 0 auto;
+    margin-top: 15vh;
+}
+
+@media screen and (max-width: 450px) {
+    nav img{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav img{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    nav img{
+        width: 100%;
+    }
+
+}

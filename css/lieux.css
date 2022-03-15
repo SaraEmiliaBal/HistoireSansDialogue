@@ -1,0 +1,64 @@
+body{
+    background-color: #f7f5e5;
+}
+
+#global{
+    height: 130vh; /* A VERIFIER, A MODIFIER AU CAS */
+}
+
+header{
+    display: flex;
+}
+
+ul{
+    display: flex;
+}
+
+#Logo{
+    display: flex;
+    color: #374d42;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#lieux{
+    color: #45775e;
+}
+
+h3{
+    color: #374d42;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#f, #g{
+    overflow-y: hidden;
+    margin: 0 auto;
+}
+
+#f{
+    margin-top: 20vh;
+}
+
+@media screen and (max-width: 450px) {
+    #Logo{
+        font-size: 1rem;
+        padding-left: 2vw;
+    }
+
+    ul a{
+        padding-left: 5vw;
+        font-size: 0.9rem;
+    }
+
+    h3{
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (min-width: 992px) {
+    
+
+}
