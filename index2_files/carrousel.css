@@ -1,0 +1,107 @@
+.englobeCaroussel{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.carouselAccueil{
+    display: flex;
+    flex-direction: row;
+    height: 35vh;
+    width: auto;
+    flex-wrap: nowrap;
+    transition: transform .5s;
+    justify-content: space-between;
+    background-color: #88af8c;
+}
+
+.slide{
+    transition: transform .5s;
+}
+
+.slide:active{
+    transform: scale(1.2);
+    z-index: 2000;
+}
+
+.boutonsCarouAccueil{
+    flex-wrap: nowrap;
+    gap: 20px;
+    z-index: 1200;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+    background-color: #88af8c;
+    margin-right: 10vh;
+    overflow-y: hidden;
+}
+
+#boutonCarre1, #boutonCarre2, #boutonCarre3, #boutonCarre4{ 
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    height: 5vh;
+    gap: 50px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #45775e;
+    border-color: #45775e;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px) { 
+    .carouselAccueil{
+        height: 15vh;
+        margin-left: 610vw;
+    }
+    
+    .boutonsCarouAccueil{
+        flex-wrap: nowrap;
+        margin-right: 0px;
+    }
+
+    #boutonCarre1, #boutonCarre3, #boutonCarre2, #boutonCarre3, #boutonCarre4{
+        width: 20vw;
+        height: 2vh;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .carouselAccueil{
+        height: 25vh;
+        margin-left: 305vw;
+    }
+    
+    .boutonsCarouAccueil{
+        flex-wrap: nowrap;
+        margin-right: 0px;
+    }
+
+    #boutonCarre1, #boutonCarre3, #boutonCarre2, #boutonCarre3, #boutonCarre4{
+        width: 20vw;
+        height: 4vh;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .imageUne, .imageDeux, .imageTrois, .imageQuatre, .imageCinq, .imageSix, .imageSept, .imageHuit, .imageNeuf, .imageDix, .imageOnze, .imageDouze, .imageTreize, .imageQuatorze,
+    .imageQuinze, .imageSeize, .imageDix-Sept, .imageDix-Huit, .imageDix-Neuf, .imageVingt-Un, .imageVingt-Deux, .imageVingt-Trois, .imageVingt-Quatre, .imageVingt-Cinq, 
+    .imageVingt-Six, .imageVingt-Sept {   
+        border-radius: 8px;
+        z-index: 1;
+        margin-bottom: 1.5vh;
+        background-color: #88af8c;
+    } 
+
+    .carouselAccueil{
+        margin-left: 177vw;
+    }
+    
+    .boutonsCarouAccueil{
+        flex-wrap: nowrap;
+        margin-right: 0px;
+    }
+}

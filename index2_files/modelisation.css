@@ -1,0 +1,86 @@
+body{
+    background-color: #f7f5e5;
+}
+
+header{
+  display: flex;
+}
+
+#Logo{
+  display: flex;
+    color: #374d42;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+ul{
+  display: flex;
+}
+
+#modelisation{
+    color: #45775e;
+}
+
+section{
+    margin-top: 10vh;
+    flex-direction: column;
+  }
+
+div.gallery {
+    flex-direction: column;
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 180px;
+    animation: couleurGallerie 5s linear infinite;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+}
+
+/*ANIMATION COULEUR DE FOND POUR LES CONTOURS */
+@keyframes couleurGallerie {
+    0%{
+        filter: drop-shadow(0 0 0.85rem #92b4f7);
+    }
+    50%{
+        filter: drop-shadow(0 0 0.95rem #b0ffd5);
+    }
+    80%{
+        filter: drop-shadow(0 0 0.95rem #fdbaff);
+    }
+    100%{
+        filter: drop-shadow(0 0 0.75rem #92b4f7);
+    }
+}
+
+@media screen and (max-width: 450px) {
+  #Logo{
+      font-size: 1rem;
+      padding-left: 2vw;
+  }
+
+  ul a{
+      padding-left: 5vw;
+      font-size: 0.9rem;
+  }
+
+  h3{
+      height: 5vh;
+  }
+}
